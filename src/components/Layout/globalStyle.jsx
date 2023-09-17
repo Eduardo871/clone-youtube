@@ -6,19 +6,20 @@ export const GlobalStyle = createGlobalStyle`
         --color-primary: #fff;
         --color-secondary: #000;
         --color-background: #ECECEC;
-        --color-background-secondary: #3B3B3B; 
+        --color-background-secondary: #3B3B3B;
         --color-border: #CECECE;
         --color-border-secondary: #6C6C6C;
     }
     body {
-        background-color: #ededed;
+        /* background-color: #ededed; */
         font-family: 'Roboto', sans-serif;
     }
   
+
 `;
 
 export const ContainerLayout = styled.div`
-  max-width: 360px;
+  max-width: 500px;
   margin: auto;
   height: 100vh;
   background-color: var(--color-primary);
@@ -29,7 +30,7 @@ export const ContainerLayout = styled.div`
 `;
 
 export const LineSeparator = styled.div`
-  width: 338px;
+  /* width: 338px; */
   height: 0.5px;
   background-color: var(--color-border);
   margin: auto;

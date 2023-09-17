@@ -1,20 +1,27 @@
 import { Compass } from "../../assets/icons/Compass";
+import Card from "../../components/Card";
 import Chip from "../../components/Chip";
-import { ContainerChips, ContainerHome, LineSeparatorVertical } from "./localStyle";
+import MapperComponent from "../../components/MapperComponent/MapperComponent";
+import { allChips } from "../../data/chips";
+import { allVideos } from "../../data/videos";
+import { ContainerCard, ContainerChips, ContainerHome, LineSeparatorVertical } from "./localStyle";
+
 
 const Home = () => {
+  
   return (
     <ContainerHome>
       <ContainerChips>
         <Chip icon={<Compass />} text="Explore" type="primary" />
         <LineSeparatorVertical />
         <div className="other-chips">
-        <Chip text="All" type="active" />
-        <Chip text="Mixes" type="secondary" />
-        <Chip text="Music" type="secondary" />
-        <Chip text="Graphic" type="secondary" />
+        <MapperComponent list={allChips}   Component={Chip} />
         </div>
+      
       </ContainerChips>
+      <ContainerCard>
+       <MapperComponent list={allVideos} Component={Card} />    
+      </ContainerCard>
     </ContainerHome>
   );
 };

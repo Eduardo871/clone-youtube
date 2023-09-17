@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const ContainerNavBar = styled.nav`
-  
   display: flex;
   padding: 10px;
   padding-left: 12px;
+  padding-bottom:0px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-primary);

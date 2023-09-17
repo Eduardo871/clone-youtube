@@ -6,12 +6,13 @@ export const ContainerHome = styled.div`
 `; 
 
 export const ContainerChips = styled.div`
-  /* padding: 10px; */
-  padding-left: 12px;
+  padding: 10px;
   padding-top: 12px;
+  padding-bottom: 10px;
   display: flex;
   overflow-x: auto;
   align-items: center;
+  margin: auto;
   &::-webkit-scrollbar{
     display: none;
   }
@@ -19,7 +20,6 @@ export const ContainerChips = styled.div`
     display: flex;
     gap: 4px;
   }
-  width: 338px;
   /* display: flex;
   width: 338px;
   margin: auto;
@@ -34,5 +34,14 @@ export const LineSeparatorVertical = styled.div`
   min-height: 28px;
   background-color: var(--color-border);
   margin: 0px 12px;
-
+ 
 `; 
+
+export const ContainerCard = styled.div`
+  display: flex;
+  height: calc( 100vh - 150px);
+  flex-direction: column;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+`;

@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { ContainerAvatar } from "./localStyle";
 import avatar from "../../assets/images/avatarExample.jpg";
 
-const Avatar = () => {
+const Avatar = ({type}) => {
     return (
-        <ContainerAvatar>
+        <ContainerAvatar type={type}>
             <img src={avatar} alt="avatar" />
         </ContainerAvatar>
     );
