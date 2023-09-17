@@ -5,6 +5,10 @@ export const  GlobalStyle = createGlobalStyle`
     :root{
         --color-primary: #fff;
         --color-secondary: #000;
+        --color-line-separator: #CECECE;
+    }
+    body {
+        background-color: #ededed;
     }
 `; 
 
@@ -18,3 +22,10 @@ export const ContainerLayout = styled.div`
 
     }
 `;
+
+export const LineSeparator = styled.div`
+    width: 338px;
+    height: 0.5px;
+    background-color: var(--color-line-separator);
+    margin: auto;
+`

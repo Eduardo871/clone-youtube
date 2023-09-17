@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { ContainerLayout, GlobalStyle } from "./globalStyle";
+import { ContainerLayout, GlobalStyle, LineSeparator } from "./globalStyle";
 import NavBar from "../NavBar";
 
 const Layout = () => {
@@ -8,6 +8,7 @@ const Layout = () => {
             <GlobalStyle />
             <ContainerLayout>
                 <NavBar />
+                <LineSeparator />
                 <Outlet />
             </ContainerLayout>
         </>
