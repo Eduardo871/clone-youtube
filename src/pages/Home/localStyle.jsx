@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerHome = styled.div`
   width: 100%;
   background-color: var(--color-primary);
-`; 
+`;
 
 export const ContainerChips = styled.div`
   padding: 10px;
@@ -13,7 +13,7 @@ export const ContainerChips = styled.div`
   overflow-x: auto;
   align-items: center;
   margin: auto;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
   .other-chips {
@@ -34,14 +34,42 @@ export const LineSeparatorVertical = styled.div`
   min-height: 28px;
   background-color: var(--color-border);
   margin: 0px 12px;
- 
-`; 
+`;
 
 export const ContainerCard = styled.div`
   display: flex;
-  height: calc( 100vh - 150px);
   flex-direction: column;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const ContainerTitleShort = styled.div`
+  margin-left: 6px;
+  margin-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+  .short-beta {
+    object-fit: cover;
+  }
+  span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+`;
+
+export const ContainerShort = styled.div`
+  width: calc(100% - 12px);
+  padding-left: 12px;
+  padding-bottom: 14px;
+  display: flex;
+  gap: 12px;
+  overflow: auto;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
     display: none;
   }
 `;

@@ -21,7 +21,6 @@ export const GlobalStyle = createGlobalStyle`
 export const ContainerLayout = styled.div`
   max-width: 500px;
   margin: auto;
-  height: 100vh;
   background-color: var(--color-primary);
   h1 {
     margin: 0;

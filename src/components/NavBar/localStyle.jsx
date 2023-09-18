@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const ContainerNavBar = styled.nav`
+position: sticky;
+z-index: 5; 
+top: 0; 
+left: 0;
   display: flex;
   padding: 10px;
   padding-left: 12px;

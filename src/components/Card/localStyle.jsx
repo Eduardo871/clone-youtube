@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ContainerCard = styled.div`
   width: 100%;
-  height: max-content;
   .img-avatar {
     width: 100%;
     height: 215px;
